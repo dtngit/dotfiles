@@ -66,3 +66,13 @@ sudo pacman -S lightdm-gtk-greeter
 systemctl start lightdm.service && systemctl enable lightdm.service
 
 sudo cp your-wallpaper.jpg /usr/share/backgrounds/lightdm.jpg
+
+# set dual monitors
+dual () {
+    xrandr --output VGA-0 --primary --left-of HDMI-0 --output HDMI-0 --auto
+}
+
+# set single monitor
+single () {
+    xrandr --output HDMI-0 --off
+}

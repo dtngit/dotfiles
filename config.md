@@ -60,10 +60,9 @@ pacman -S dhcpcd
 systemctl enable dhcpcd
 systemctl start dhcpcd
 
-# lightdm install ctrl+F1234 to exit login screen
+# lightdm install
 sudo pacman -S lightdm
 sudo pacman -S lightdm-gtk-greeter
-systemctl start lightdm.service
-systemctl enable lightdm.service
+systemctl start lightdm.service && systemctl enable lightdm.service
 
 sudo cp your-wallpaper.jpg /usr/share/backgrounds/lightdm.jpg

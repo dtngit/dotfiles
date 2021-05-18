@@ -67,6 +67,13 @@ systemctl start lightdm.service && systemctl enable lightdm.service
 
 sudo cp your-wallpaper.jpg /usr/share/backgrounds/lightdm.jpg
 
+# lightdm avatar
+sudo pacman -S accountsservice
+cp dotfile/.face /var/lib/AccountsService/icons/dn.png
+Edit or create the account settings file /var/lib/AccountsService/users/username, and add the lines
+[User]
+Icon=/var/lib/AccountsService/icons/dn.png
+
 # set dual monitors
 dual () {
     xrandr --output VGA-0 --primary --left-of HDMI-0 --output HDMI-0 --auto

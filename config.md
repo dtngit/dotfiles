@@ -2,23 +2,23 @@
 sudo pacman -S virtualbox-guest-utils
 
 # Boot from USB
-## Create a vmdk file
+Create a vmdk file
 USB drive name is /dev/sdb
 sudo vboxmanage internalcommands createrawvmdk -filename ~/vm/usb.vmdk -rawdisk /dev/sdb
 
-## Set permission to vmdk file
+Set permission to vmdk file
 sudo chowm $USER:$USER ~/vm/usb.vmdk
 
-## add your user to "vboxusers" and "disk"
+add your user to "vboxusers" and "disk"
 sudo usermod -a -G vboxusers dn
 sudo usermod -a -G disk dn
 
-## remove USB drive first and reboot the system
+remove USB drive first and reboot the system
 
-## new vm
+add new hard disk
 virtualbox chose "Use an existing virtual hard disk file"
 
-## existing vm
+existing vm
 add new storage attachments > Hard Disk
 VERR_ACCESS_DENIED [chmod 777 usb.vmdk] then reboot
 

@@ -1,4 +1,12 @@
-# Vbox resolution
+# VirtualBox host
+sudo pacman -S virtualbox virtualbox-guest-iso
+
+sudo gpasswd -a $USER vboxusers
+sudo modprobe vboxdrv
+yay -Syy
+yay -S virtual-ext-oracle
+
+# Virtual Machine resolution
 sudo pacman -S virtualbox-guest-utils
 
 # Boot from USB

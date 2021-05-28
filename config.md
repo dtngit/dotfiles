@@ -85,3 +85,12 @@ dual () {
 single () {
     xrandr --output HDMI-0 --off
 }
+
+# Download file from host
+scp username@hostname:/path/to/remote/file /path/to/local/file
+
+# openssh from host
+sudo pacman -S openssh
+sudo systemctl enable sshd.sevice
+sudo systemctl start sshd.sevice
+ssh username@hostname

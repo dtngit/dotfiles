@@ -34,6 +34,13 @@ existing vm
 add new storage attachments > Hard Disk
 VERR_ACCESS_DENIED [chmod 777 usb.vmdk] then reboot
 
+# NETWORK
+check gateway
+ip route show
+
+check dns
+cat /etc/resolv.conf
+
 # Software
 pacman -S pcmanfm vifm
 

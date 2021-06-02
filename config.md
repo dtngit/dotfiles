@@ -32,7 +32,7 @@ virtualbox chose "Use an existing virtual hard disk file"
 
 existing vm
 add new storage attachments > Hard Disk
-VERR_ACCESS_DENIED [chmod 777 usb.vmdk] then reboot
+VERR_ACCESS_DENIED [chmod 744 usb.vmdk] then reboot
 
 # NETWORK
 check gateway

@@ -9,6 +9,10 @@ yay -S virtual-ext-oracle
 # Virtual Machine resolution
 sudo pacman -S virtualbox-guest-utils
 
+# VM Shared Clipboard
+killall VBoxClient
+VBoxClient-all
+
 # Boot from USB
 Create a vmdk file
 USB drive name is /dev/sdb

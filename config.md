@@ -67,8 +67,9 @@ yay -S otf-font-awesome-5-free
 sudo pacman -S alacritty xterm
 sudo pacman -S xmonad xmonad-contrib xmobar
 
-# wifi problem failed to retrieving or pacman -S broadcom-wl
+# wifi problem failed to retrieving
 sudo pacman -S brcm80211
+or pacman -S broadcom-wl
 
 nmcli dev status
 nmcli radio wifi

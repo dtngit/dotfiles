@@ -1,4 +1,4 @@
-# On this note, we will install qemu and the virtual machine manager on the Artix Linux operating system (runit) just as usual without being long. First make sure the [extra], [community], and [multilib] repos of Arch Linux are enabled. Just install the required packages as follows:
+# install qemu and the virtual machine manager on the Artix Linux operating system (runit).
 pacman -S qemu virt-manager libvirt-runit vde2 dnsmasq ebtables bridge-utils openbsd-netcat
 
 # configuration in /etc/libvirt/libvirtd.conf uncomment the following lines:

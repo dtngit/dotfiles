@@ -7,6 +7,7 @@ unix_sock_rw_perms = "0770"
 
 # add libvirt group
 usermod -a -G libvirt $(whoami)
+
 newgrp libvirt
 
 # start the services libvirtd, virtlockd , virtlogd

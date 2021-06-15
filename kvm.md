@@ -11,5 +11,7 @@ newgrp libvirt
 
 # start the services libvirtd, virtlockd , virtlogd
 ln -s /etc/runit/sv/libvirtd /etc/runit/runsvdir/default
+
 ln -s /etc/runit/sv/virtlockd /etc/runit/runsvdir/default
+
 ln -s /etc/runit/sv/virtlogd /etc/runit/runsvdir/default

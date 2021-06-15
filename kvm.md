@@ -16,3 +16,7 @@ ln -s /etc/runit/sv/libvirtd /etc/runit/runsvdir/default
 ln -s /etc/runit/sv/virtlockd /etc/runit/runsvdir/default
 
 ln -s /etc/runit/sv/virtlogd /etc/runit/runsvdir/default
+
+
+# Libvirt did not detect any UEFI/OVMF firmware images installed on host
+pacman -S edk2-ovmf

@@ -21,6 +21,7 @@ ln -s /etc/runit/sv/virtlogd /etc/runit/runsvdir/default
 # Libvirt did not detect any UEFI/OVMF firmware images installed on host
 pacman -S edk2-ovmf
 
+# Host OS
 # autostart network
 sudo virsh net-autostart default
 
@@ -36,3 +37,10 @@ sudo virsh autostart ArtixLinux-LARBS
 sudo virsh autostart --disable ArtixLinux-LARBS
 
 ls /etc/libvirt/qemu/autostart
+
+# Guest OS
+# shared clipboard
+sudo ln -s /etc/runit/sv/spice-vdagentd /run/runit/service
+ 
+sv status /run/runit/service/*
+

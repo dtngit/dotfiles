@@ -22,7 +22,11 @@ ln -s /etc/runit/sv/virtlogd /etc/runit/runsvdir/default
 pacman -S edk2-ovmf
 
 # autostart network
-sudo virsh net-autostart --network default
+sudo virsh net-autostart default
+
+sudo virsh net-start default
+
+sudo virsh net-list --all
 
 # autostart vm
 sudo virsh list --all

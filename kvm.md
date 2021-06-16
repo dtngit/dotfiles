@@ -20,3 +20,6 @@ ln -s /etc/runit/sv/virtlogd /etc/runit/runsvdir/default
 
 # Libvirt did not detect any UEFI/OVMF firmware images installed on host
 pacman -S edk2-ovmf
+
+# network
+sudo virsh net-autostart --network default

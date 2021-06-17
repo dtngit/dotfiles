@@ -39,8 +39,12 @@ sudo virsh autostart --disable ArtixLinux-LARBS
 ls /etc/libvirt/qemu/autostart
 
 # Guest OS
-# shared clipboard
+# shared clipboard (Display: Spice, Video: QXL)
+pacman -S spice-vdagent spice-vdagent-runit
+
 sudo ln -s /etc/runit/sv/spice-vdagentd /run/runit/service
  
 sv status /run/runit/service/*
 
+# edit xprofile
+spice-vdagent &

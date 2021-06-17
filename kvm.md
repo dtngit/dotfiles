@@ -38,8 +38,8 @@ sudo virsh net-list --all
 ## autostart vm
 ```
 sudo virsh list --all
-sudo virsh autostart ArtixLinux-LARBS
-sudo virsh autostart --disable ArtixLinux-LARBS
+sudo virsh autostart vmName
+sudo virsh autostart --disable vmName
 ls /etc/libvirt/qemu/autostart
 ```
 

@@ -114,3 +114,6 @@ sudo pacman -S openssh
 sudo systemctl enable sshd.sevice
 sudo systemctl start sshd.sevice
 ssh username@hostname
+
+# Remote Desktop
+xfreerdp +clipboard /u:<username> /v:<hostname> /size:<WxH>

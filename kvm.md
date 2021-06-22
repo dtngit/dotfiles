@@ -54,3 +54,15 @@ sv status /run/runit/service/*
 ```
 spice-vdagent &
 ```
+## Artix autologin edit /etc/runit/sv/agetty-tty1/conf
+```
+if [ -x /sbin/agetty -o -x /bin/agetty ]; then
+	# util-linux specific settings
+	if [ "${tty}" = "tty1" ]; then
+		GETTY_ARGS="--noclear --autologin <username>"
+	fi
+fi
+
+BAUD_RATE=38400
+
+```

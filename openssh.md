@@ -1,4 +1,8 @@
 # openssh
+## Install the SSH Server on Artix Linux
+```
+sudo pacman -S openssh-runit
+```
 ## Install the SSH Server on Arch Linux
 ```
 sudo pacman -S openssh

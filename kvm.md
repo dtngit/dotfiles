@@ -54,7 +54,23 @@ sv status /run/runit/service/*
 ```
 spice-vdagent &
 ```
-## Artix autologin edit /etc/runit/sv/agetty-tty1/conf
+
+## shared folder
+### HOST
+```
+<filesystem type='mount' accessmode='mapped'>
+    <source dir='/tmp/shared'/>
+    <target dir='/hostshare'/>
+</filesystem>
+```
+### GUEST
+```
+mkdir ~/hostfiles
+sudo mount -t 9p -o trans=virtio /hostshare hostfiles/
+```
+
+
+# Artix autologin edit /etc/runit/sv/agetty-tty1/conf
 ```
 if [ -x /sbin/agetty -o -x /bin/agetty ]; then
 	# util-linux specific settings

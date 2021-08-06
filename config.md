@@ -120,3 +120,4 @@ ssh username@hostname
 
 # Remote Desktop
 xfreerdp +clipboard /u:<username> /v:<hostname> /size:<WxH>
+xfreerdp +clipboard /u:TVD /v:192.168.1.36 /size:1366x768

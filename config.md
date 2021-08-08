@@ -109,6 +109,10 @@ single () {
     xrandr --output HDMI-0 --off
 }
 
+# set VGA
+xrandr --output VGA1 --primary --left-of LVDS1 --output LVDS1 --auto
+xrandr --output VGA1 --primary --left-of LVDS1 --output LVDS1 --off
+
 # Download file from host
 scp username@hostname:/path/to/remote/file /path/to/local/file
 

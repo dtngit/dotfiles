@@ -21,3 +21,9 @@ sudo systemctl enable sshd
 ```
 ssh USERNAME@IP_ADDRESS
 ```
+## push to another host
+sftp user@hostname
+put filename target_directory
+get filename
+## To get the complete directory, instead use
+get -r secret_files/

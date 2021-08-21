@@ -25,7 +25,8 @@ adb -s 10.0.0.49:5555 install -r C:\Users\Duy\Desktop\GooglePlay\6.0\com.google.
 
 adb -s 10.0.0.49:5555 install C:\Users\Duy\Desktop\GooglePlay\6.0\v4.23.2_apkpure.com.apk
 
-
+```
 cd C:\Users\Duy\AppData\Local\Android\Sdk\platform-tools\
 adb connect 192.168.1.37:5555
 adb -s 192.168.1.37:5555 install C:\Users\Duy\Downloads\smarttube_beta.apk
+```

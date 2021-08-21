@@ -2,3 +2,7 @@
 ```
 sudo service cups start
 ```
+## install nmap
+```
+sudo apt-get install nmap
+```

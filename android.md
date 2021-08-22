@@ -32,9 +32,25 @@ adb -s 192.168.1.37:5555 install C:\Users\Duy\Downloads\smarttube_beta.apk
 ```
 https://www.youtube.com/watch?v=TtLrLkWhUpA
 
-
+## control android
 ```
 apt install scrcpy
 adb connect 192.168.1.37:5555
 scrcpy
+```
+## uninstall apps
+```
+adb shell su 0 pm list packages
+adb uninstall com.android.calculator2
+```
+## remove system apps
+```
+adb shell
+pm list packages
+pm uninstall -k --user 0 com.google.android.youtube
+```
+## Re-install a previously removed app
+```
+adb shell
+pm install-existing com.google.android.youtube
 ```

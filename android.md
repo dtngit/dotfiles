@@ -1,4 +1,7 @@
 ```
+sudo apt-get install android-tools-adb
+Print a list of connected devices: adb devices
+Kill the ADB server: adb kill-server
 cd C:\Users\Duy\AppData\Local\Android\Sdk\platform-tools\
 adb connect 192.168.1.37:5555
 adb -s 192.168.1.37:5555 install C:\Users\Duy\Downloads\smarttube_beta.apk

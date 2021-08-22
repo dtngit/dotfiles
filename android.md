@@ -35,6 +35,6 @@ https://www.youtube.com/watch?v=TtLrLkWhUpA
 
 ```
 apt install scrcpy
-adb connect 10.71.34.101:5555
+adb connect 192.168.1.37:5555
 scrcpy
 ```

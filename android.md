@@ -30,6 +30,11 @@ cd C:\Users\Duy\AppData\Local\Android\Sdk\platform-tools\
 adb connect 192.168.1.37:5555
 adb -s 192.168.1.37:5555 install C:\Users\Duy\Downloads\smarttube_beta.apk
 ```
-
-apt install scrcpy
 https://www.youtube.com/watch?v=TtLrLkWhUpA
+
+
+```
+apt install scrcpy
+adb connect 10.71.34.101:5555
+scrcpy
+```

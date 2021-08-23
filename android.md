@@ -10,7 +10,7 @@ https://www.youtube.com/watch?v=TtLrLkWhUpA
 
 ## control android
 ```
-apt install scrcpy
+sudo apt-get install scrcpy
 adb connect 192.168.1.37:5555
 scrcpy
 ```

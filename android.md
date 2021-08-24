@@ -59,3 +59,16 @@ adb shell wm overscan 0,0,0,-190
 ```
 adb shell wm overscan 0,0,0,0
 ```
+## Desktop site permanently
+
+```
+https://forum.xda-developers.com/attachments/chrome-command-line-txt.4464062/
+
+chrome --user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36" --force-device-scale-factor=1
+
+adb push chrome-command-line /data/local/tmp/chrome-command-line
+```
+## Go back Mobible mode
+```
+adb shell rm /data/local/tmp/chrome-command-line
+```

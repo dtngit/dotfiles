@@ -53,3 +53,11 @@ adb -s 10.0.0.49:5555 install -r C:\Users\Duy\Desktop\GooglePlay\6.0\com.google.
 
 adb -s 10.0.0.49:5555 install C:\Users\Duy\Desktop\GooglePlay\6.0\v4.23.2_apkpure.com.apk
 ```
+## Disable the navigation bar
+```
+adb shell wm overscan 0,0,0,-190
+```
+## Get back the navigation bar
+```
+adb shell wm overscan 0,0,0,0
+```

@@ -72,3 +72,15 @@ adb push chrome-command-line /data/local/tmp/chrome-command-line
 ```
 adb shell rm /data/local/tmp/chrome-command-line
 ```
+
+## ATV
+to bypass setup wizard
+Debug nomodeset
+exit
+
+Setup account
+
+Setting > Sound > Sound output > Display port > setup wizard
+
+Remote
+press cursor button on the remote to set ENTER and BACK
